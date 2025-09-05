@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   root 'pages#home'
-  get "pages/home"
-
+  
+  get "sobre", to: "pages#sobre"
+  get "ceo", to: "pages#ceo"
+  get "associados", to: "pages#associados"
+  get "areas-de-atuacao", to: "pages#areas_de_atuacao"
+  get "artigos", to: "pages#artigos"
+  get "contato", to: "pages#contato"
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
